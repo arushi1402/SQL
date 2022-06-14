@@ -65,7 +65,7 @@ Where Cart.user_id='1';
 
 -- 5 b. Cart.User_id, Users.User_Name, Cart.Cart_id, Menu_Items.Name, 
 Select Sum(menu_item.price) as total_price from menu_item 
-Join cart on menu_item.item_id=Cart.menu_item_id 
+Join Cart on menu_item.item_id=Cart.menu_item_id 
 join users on users.id=Cart.user_id Where Cart.User_id='1'; #327
 
 -- 6 a. Frame SQL query to remove a menu items from Cart based on User Id and Menu Item Id
